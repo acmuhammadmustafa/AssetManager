@@ -40,4 +40,12 @@ public class Asset {
         return originalCost;
     }
 
+    @Override
+    public String toString() {
+        return "Asset Info: " +
+                "[ Description: " + description +
+                " || Date Acquired: " + dateAcquired +
+                " || Original Cost: $" + originalCost +
+                " ]";
+    }
 }

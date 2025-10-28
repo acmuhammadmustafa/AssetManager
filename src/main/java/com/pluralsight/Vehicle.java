@@ -57,4 +57,13 @@ public class Vehicle extends Asset {
         }
     return carValuePrice;
     }
+
+    @Override
+    public String toString() {
+        return "Vehicle Info: [" +
+                " Make and Model: " + makeModel +
+                " || Year: " + year +
+                " || Odometer: " + odometer +
+                " ]";
+    }
 }

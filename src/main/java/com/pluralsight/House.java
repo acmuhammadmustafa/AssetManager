@@ -62,4 +62,13 @@ public class House extends Asset {
         return (pricePerSquareFoot * getSquareFoot()) + 0.25 * getLotSize();
     }
 
+    @Override
+    public String toString() {
+        return "House Info: " +
+                "[ Address: " + address +
+                " || Condition: " + condition +
+                " || Square Foot: " + squareFoot +
+                " || Lot Size: " + lotSize +
+                " ]";
+    }
 }
